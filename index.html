@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Home page</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <h1 class="logo">WVB</h1>
+            <nav>
+                <div class="toogle-menu">&#9776</div>
+                <ul class="nav-list">
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="Login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- hero section -->
+    <section class="hero">
+        <div class="hero-section">
+            <h2>With WVenueBook</h2>
+            <p>Book Your Dream Venue in Just a Click!</p>
+            <form action="#" class="search-box">
+                <!-- <input type="text" placeholder="Search venue"> -->
+                <!-- <button type="submit">lets get started</button> -->
+                <a href="start.html">start</a>
+            </form>
+        </div>
+    </section>
+    <section class="venues">
+        <h1>Best rated venues</h1>
+        <div class="venue-section">
+            <div class="venue-card">
+                <img src="images/card_a.jpg" alt loading="lazy">
+                <h2>Hotel Towers</h2>
+                <a href="card_a.html">see more</a>
+            </div>
+            <div class="venue-card">
+                <img src="images/card_b.jpg" alt loading="lazy">
+                <h2>ITC Sonar</h2>
+                <a href="card_b.html">see more</a>
+            </div>
+            <div class="venue-card">
+                <img src="images/card_c.jpg" alt loading="lazy">
+                <h2>Rambagh Palace</h2>
+                <a href="card_c.html">see more1</a>
+            </div>
+            <div class="venue-card">
+                <img src="images/card_d.jpg" alt loading="lazy">
+                <h2>Goodluck halls</h2>
+                <a href="card_d.html">see more</a>
+            </div>
+            <div class="venue-card">
+                <img src="images/card_e.jpg" alt loading="lazy">
+                <h2>Subham Grand</h2>
+                <a href="card_e.html">see more</a>
+            </div>
+        </div>
+    </section>
+    <div>
+        <button type="submit" onclick = "openlistofvenue()" class="bin">View more</button> 
+    </div>
+    <!-- foooter -->
+    <footer>
+        <div>
+            <p>&copy;xlayer bookings<br>
+                <a href="mailto:neha.roy20011217@example.com">Write at: WVB@gmail.com</a></p>
+        </div>
+    </footer>
+    <script>
+
+        function openlistofvenue() {
+            window.open("start.html");
+        }
+    </script>
+</body>
+</html>

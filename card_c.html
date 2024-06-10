@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet_card.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="index.html">WVB</a></h1>
+            <nav>
+                <div class="lgn">
+                    <a href="Login.html">Login</a></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="slider">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="images/card_i.jpg" style="width:100%">
+              <div class="text">Decor</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/card_j.jpg" style="width:100%">
+              <div class="text">Decor 1</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/card_k.jpg" style="width:100%">
+              <div class="text">Decor 2</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+    </section>
+    <section class="info">
+        <div class="flex-container">
+            <div class="des_left">
+                <h1>Rambag Palace</h1><br>
+                <pre>
+Nestled in the vibrant outskirts of Maharashtra, the Ramabg Wedding 
+Venue promises an enchanting escape for couples seeking timeless 
+celebrations. Boasting a grand banquet hall and lush garden, it 
+offers a picturesque setting for weddings. Luxurious accommodation
+ensures comfort for guests, while customizable packages cater to 
+every need. With scenic surroundings and professional event planning,
+this venue creates unforgettable moments amidst the beauty of nature
+and Rajasthan's rich heritage.
+
+
+
+
+                </pre>
+            </div>
+            <div class="des_right">
+                <ul>
+                    <li>Max people: 100-1500</li>
+                    <li>Food per plate: 500-5000</li>
+                    <li>Location: 567 Vineyard Lane, Nashik, Maharashtra</li>
+                </ul>
+                <!-- <h2 class="x"><a href="bookings_form.html">Book</a></h2> -->
+                <button type="submit" onclick = "openbform()" class="bin">Book</button>  
+            </div>
+        </div>
+    </section>
+<script>
+
+function openbform() {
+    window.open("bookings_form.html");
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+</html> 

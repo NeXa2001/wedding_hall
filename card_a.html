@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet_card.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="index.html">WVB</a></h1>
+            <nav>
+                <div class="lgn">
+                    <a href="Login.html">Login</a></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="slider">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="images/card_e.jpg" style="width:100%">
+              <div class="text">Seating Area</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/card_f.jpg" style="width:100%">
+              <div class="text">Decor 1</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/card_g.jpg" style="width:100%">
+              <div class="text">Decor 2</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+    </section>
+    <section class="info">
+        <div class="flex-container">
+            <div class="des_left">
+                <h1>Hotel Towers</h1><br>
+                <pre>
+Hotel Towers offers a dreamy wedding venue amidst towering 
+elegance and luxury.Nestled in the heart of the city, its 
+grandiose towers stand as a testament to opulence. The venue 
+exudes sophistication with its exquisite ballrooms adorned 
+with crystal chandeliers and panoramic views of the city sky-
+line. Whether exchanging vows amidst the sunset hues or da-
+enveloped in romance and splendor. With impeccable service and 
+attention to detail, Hotel Towers transforms weddings into t-
+imeless fairy tales, creating memories to cherish for a lifetime.
+                </pre>
+            </div>
+            <div class="des_right">
+                <ul>
+                    <li>Max people: 1000-1500</li>
+                    <li>Food per plate: 700-5000</li>
+                    <li>Location: 101 Lakeview Drive, Udaipur, Rajasthan
+
+                    </li>
+                </ul>
+                <!-- <h2 class="x"><a href="bookings_form.html">Book</a></h2> -->
+                <button type="submit" onclick = "openbform()" class="bin">Book</button>  
+            </div>
+        </div>
+    </section>
+<script>
+
+function openbform() {
+    window.open("bookings_form.html");
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+</html> 

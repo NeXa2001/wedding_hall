@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet_form.css">
+    <title>Registration form</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="index.html">WVB</a></h1>
+            </nav>
+        </div>
+    </header>
+    <!-- main section -->
+    <section class="ms_main">
+        <div class="book-en">
+            <h1>Venue Booking</h1>
+            <form action="bookings_form.php" method="POST">
+                <label>First Name</label>
+                <input type="text" name="fname" required>
+                <label>Last Name</label>
+                <input type="text" name="lname" required>
+                <label>Contact Number</label>
+                <input type="number" name="phone" required>
+                <label>Email</label>
+                <input type="email" name="email" required>
+                <label> Estimated guest population : </label>   
+                <input type="number" name="pop" required>
+                <label> Estimated food cost per plate : </label>   
+                <input type="number" name="food" required>
+                <label> Requirements(if any) : </label> 
+                <textarea cols="43" rows="2" name="req" value="address"> </textarea>  
+                <label> Venue name : </label> 
+                <input type="text" name="vname">
+                <input type="submit" name="Submit" value="Submit"> 
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p>&copy;xlayer bookings<br>
+                <a href="mailto:neha.roy20011217@example.com">Write at: WVB@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
